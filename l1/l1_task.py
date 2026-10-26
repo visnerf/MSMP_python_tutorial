@@ -1,6 +1,5 @@
 """
 LEKCE 1 - SAMOSTATNÁ CVIČENÍ A ÚKOLY
-Doplňte kód pod příslušná zadání.
 """
 # %% Úkol 1: Proměnné a datové typy
 """
@@ -34,18 +33,13 @@ Máme zadaný kompresní objem jednoho válce V_c = 0.000045 m3.
 3. Vypočítejte střední pístovou rychlost c_s [m/s] při otáčkách n = 4000 min-1.
    Vzorec: c_s = 2 * z * (n / 60), kde z je zdvih v metrech.
 """
-
 import math
-V_c = 0.000045
 n_otacky = 4000
 # Sem napište kód pro Úkol 2:
 V_c = 0.000045  # kompresní objem jednoho válce v m3
 V_z = math.pi * (bore / 1000 / 2) ** 2 * (stroke / 1000)  # zdvihový objem jednoho válce v m3
 epsilon = (V_z + V_c) / V_c  # kompresní poměr
 c_s = 2 * (stroke / 1000) * (n_otacky / 60)  # střední pístová rychlost v m/s
-
-
-
 
 
 
@@ -60,6 +54,8 @@ střední pístovou rychlost (zaokrouhlenou na 2 desetinná místa) z Úkolu 2.
 textik = f"Zdvihový objem jednoho válce V_z: {V_z:.6f} m3, Kompresní poměr epsilon: {epsilon:.1f}, Střední pístová rychlost c_s: {c_s:.2f} m/s"
 print(textik)
 
+zprava = f"Motor {engineName} má {cylinders} válce, kompresní poměr {epsilon:.1f} a střední pístovou rychlost {c_s:.2f}"
+print(zprava)
 
 
 
